@@ -29,8 +29,8 @@ The code is not all mine. In fact, I mostly just hacked together examples I like
 ------
 
 This is a working profile, but there are some tweaks I would like to make in the future:
-*where the (git:<branch>:<status>) is displayed I would like for the "git" to be replaced with the repo name like so (<repo name>:<branch>:<status>). I couldn't figure this part out. 
-*I would also like to display the number of files waiting to be committed if the status="dirty"; otherwise, display nothing. (<repe>:<branch>:<status>:<# of new, modified files>).
+*where the (git:branch:status) is displayed I would like for the "git" to be replaced with the repo name like so (repo_name:branch:status). I couldn't figure this part out. 
+*I would also like to display the number of files waiting to be committed if the status="dirty"; otherwise, display nothing. (repo:branch:status:# of new, modified files).
 
 
 
