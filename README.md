@@ -3,7 +3,7 @@
 
 This is my custom terminal I did as a weekend project. The prompt features the standard user name, the working directory, and the git status on the first line; as well as, the active virtual environment (if applicable) and a prompt "->" on the second line. 
 
-The status will say either "clean" or "dirty" to represent the current repo status. 
+The status will indicate whether the working directory "clean" or "dirty" to represent whether or not there or files that need to be staged. 
 
 Also, if the current directory does not have a .git repo then the git notification will not appear in the window. 
 
