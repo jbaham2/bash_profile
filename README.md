@@ -17,10 +17,11 @@ Also, if the current directory does not have a .git repo then the git notificati
 -----------------
 
 The code is not all mine. In fact, I mostly just hacked together examples I liked around the internet:
-*[http://bytebaker.com/2012/01/09/show-git-information-in-your-prompt/](http://bytebaker.com/2012/01/09/show-git-information-in-your-prompt/)
-*[http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/](http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/)
-*[http://dobsondev.com/customizing-your-terminal/](http://dobsondev.com/customizing-your-terminal/)
-*And some help from StackOverflow
+
+* [http://bytebaker.com/2012/01/09/show-git-information-in-your-prompt/](http://bytebaker.com/2012/01/09/show-git-information-in-your-prompt/)
+* [http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/](http://martinfitzpatrick.name/article/add-git-branch-name-to-terminal-prompt-mac/)
+* [http://dobsondev.com/customizing-your-terminal/](http://dobsondev.com/customizing-your-terminal/)
+* And some help from StackOverflow
 
 
 
