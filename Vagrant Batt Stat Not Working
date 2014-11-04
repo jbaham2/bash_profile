@@ -1,0 +1,31 @@
+#function to display vagrant instances
+function count_vagrant_instance() {
+    vstat=$(vagrant global_status | grep_running | wc -|)
+    if [ "$v_stat" == "0"]; then
+        echo " "
+    else
+        echo "vagrant:$vstat:"
+}
+
+#function to get battery status
+function battery_time() {
+    if [ "$INTERACTIVETERM" == "-YES-" ]; then
+    MINREM=`ioreg -l | grep AvgTimeToEmpty | cut -d= -f 2`
+        if [ "$MINREM" = "" ]; then
+              # No battery? Maybe a desktop computer
+              # Do nothing
+              echo 
+        elif [ $MINREM -gt 60 ]; then 
+              HRREM=$((MINREM / 60))
+              MREM=`expr $MINREM % 60`
+              echo Battery: ${tGreen}${tBold}$HRREM hr $MREM min ${tReset} remaining
+        else
+              if [ $MINREM -lt 20 ]; then
+                COLOR=$tRed
+              else
+                COLOR=$tGreen
+              fi
+        echo "Battery: $COLOR${tBold} $MINREM min ${tReset} remaining"
+        fi
+    fi
+}

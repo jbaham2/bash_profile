@@ -28,7 +28,13 @@ function prompt {
   local WHITEBOLD="\[\033[1;37m\]"
   local RESETCOLOR="\[\e[00m\]"
  
-  
+ 
+
+ #function to get battery status
+function battery_remaining() {
+    bp=$(pmset -g batt | egrep "([0-9]+\%).*" -o --colour=auto | cut -f1 -d';')
+    echo "$bp"
+} 
 
 #function to parse git branch 
 function new_parse_git_branch() {
